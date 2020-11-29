@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:drumtrigger4-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -50,7 +51,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3500 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 3200 3750 3500
+	3750 3200 3750 3400
 Wire Wire Line
 	3150 3500 3150 3300
 Wire Wire Line
@@ -494,9 +495,6 @@ Wire Wire Line
 	2950 3500 2950 3800
 Wire Wire Line
 	2950 3500 3150 3500
-Connection ~ 3150 3500
-Wire Wire Line
-	3150 3500 3750 3500
 $Comp
 L power:+12V #PWR0115
 U 1 1 5E62C205
@@ -607,4 +605,18 @@ F 3 "~" H 6700 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6050 3050
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 5FC3FA6F
+P 3950 3500
+F 0 "J5" H 3868 3717 50  0000 C CNN
+F 1 "Gain" H 3868 3626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3950 3500 50  0001 C CNN
+F 3 "~" H 3950 3500 50  0001 C CNN
+	1    3950 3500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3150 3500 3750 3500
+Connection ~ 3150 3500
 $EndSCHEMATC
